@@ -10,9 +10,14 @@
 
     <style name="Theme.Islami" parent="Base.Theme.Islami" />
 
-    <style name="bodyMedium">
+    <style name="bodyLarge">
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bodyMedium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="bodySmall">
