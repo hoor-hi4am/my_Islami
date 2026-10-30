@@ -9,7 +9,7 @@ import com.route.islami.R
 import com.route.islami.ui.model.SuraDM
 import com.route.islami.ui.scrrens.main.fragments.quran.SuraAdapter.SuraViewHolder
 
-class SuraAdapter(val suras: List<SuraDM>): RecyclerView.Adapter<SuraAdapter.SuraViewHolder>() {
+class SuraAdapter(val suras: List<SuraDM>, val onClick: (SuraDM) -> Unit): RecyclerView.Adapter<SuraAdapter.SuraViewHolder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -28,6 +28,9 @@ class SuraAdapter(val suras: List<SuraDM>): RecyclerView.Adapter<SuraAdapter.Sur
         holder.suraNameEn.text = sura.nameEn
         holder.suraNameAr.text = sura.nameAr
         holder.suraVerses.text = "${sura.versesCount} Verses"
+        holder.itemView.setOnClickListener {
+            onClick(sura)
+        }
     }
 
     override fun getItemCount(): Int = suras.size
