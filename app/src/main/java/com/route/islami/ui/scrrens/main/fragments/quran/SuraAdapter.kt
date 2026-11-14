@@ -30,6 +30,7 @@ class SuraAdapter(val suras: List<SuraDM>, val onClick: (SuraDM) -> Unit): Recyc
         holder.suraVerses.text = "${sura.versesCount} Verses"
         holder.itemView.setOnClickListener {
             onClick(sura)
+            //يعرف المستخدم ضغط على أنهي سورة.
         }
     }
 

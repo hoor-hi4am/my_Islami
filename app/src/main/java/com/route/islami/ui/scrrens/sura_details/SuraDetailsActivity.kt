@@ -11,6 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.route.islami.R
 import com.route.islami.ui.model.SuraDM
 
+//5. SuraDetailsActivity
+//تستقبل Object السورة وتعرض تفاصيلها.
 class SuraDetailsActivity : AppCompatActivity() {
     lateinit var nameAr: TextView
     lateinit var nameEn: TextView

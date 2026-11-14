@@ -32,7 +32,10 @@ class QuranFragment : Fragment() {
         suraRecyclerView = view.findViewById(R.id.suraRecyclerView)
         //خلاص معاك الريسايكلر فيو روح اربطه بالادابتر
         suraAdapter = SuraAdapter(Constants.suraList){ sura->
+            //3. Callback
+            //يبعت Object السورة للـ Fragment.
             val intent = Intent(context, SuraDetailsActivity::class.java)
+            //ينقل Object السورة ويفتح الشاشة الجديدة.
             //ما ينفعش زي ما كنا متعودين نكتب thisعشان الفراجمنت مش كونتكست الفراجمنت دي حاجة جوه اكتيفتي
             intent.putExtra("sura", sura)
             startActivity(intent)
