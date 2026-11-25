@@ -9,6 +9,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.route.islami.R
 import com.route.islami.ui.scrrens.main.fragments.hadith.HadithFragment
 import com.route.islami.ui.scrrens.main.fragments.quran.QuranFragment
+import com.route.islami.ui.scrrens.main.fragments.sebha.SebhaFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,10 +34,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.sebhaTab -> {
-                    Toast.makeText(
-                        this, "Task", Toast.LENGTH_SHORT
-                    ).show()
-                    false
+                    openFragment(SebhaFragment())
+                    true
                 }
 
                 R.id.radioTab -> {

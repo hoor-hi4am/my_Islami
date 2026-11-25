@@ -25,6 +25,10 @@
             android:name=".ui.scrrens.sura_details.SuraDetailsActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.scrrens.hadith_details.HadithDetailsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
